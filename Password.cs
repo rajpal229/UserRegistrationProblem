@@ -18,13 +18,13 @@ namespace UserRegistrationProblem
             if (regex.IsMatch(data))
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(data + " It is a Valid Password");
+                Console.WriteLine(data + "It is a Valid Password");
                 Console.ResetColor();
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(data + " It is a Invalid Password");
+                Console.WriteLine(data + "It is a Invalid Password");
                 Console.ResetColor();
             }
         }
