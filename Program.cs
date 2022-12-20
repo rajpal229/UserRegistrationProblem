@@ -8,7 +8,7 @@
             bool flag = true;
             while(flag = true)
             {
-                Console.WriteLine("1. Enter First Name\n2. Enter Last Name\n3. Enter Email Address");
+                Console.WriteLine("1. Enter First Name\n2. Enter Last Name\n3. Enter Email Address\n4. Enter Phone Number");
                 int commmand = Convert.ToInt32(Console.ReadLine());
                 switch (commmand)
                 {
@@ -23,6 +23,10 @@
                     case 3:
                         EmailAddress emailaddress = new EmailAddress();
                         emailaddress.Email();
+                        break;
+                    case 4:
+                        PhoneNumber phonenumber = new PhoneNumber();
+                        phonenumber.Phone();
                         break;
                     default:
                         Console.WriteLine("Invalid Input");
