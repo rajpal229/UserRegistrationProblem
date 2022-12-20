@@ -4,19 +4,27 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to User Registration\n1. To Enter First Name");
-            int commmand = Convert.ToInt32(Console.ReadLine());
-            switch (commmand)
+            Console.WriteLine("Welcome to User Registration");
+            bool flag = true;
+            while(flag = true)
             {
-                case 1:
-                    FirstName firstname = new FirstName();
-                    firstname.First();
-                    break;
-                default:
-                    Console.WriteLine("Invalid Input");
-                    break;
+                Console.WriteLine("1. Enter First Name\n2. Enter Last Name");
+                int commmand = Convert.ToInt32(Console.ReadLine());
+                switch (commmand)
+                {
+                    case 1:
+                        FirstName firstname = new FirstName();
+                        firstname.First();
+                        break;
+                    case 2:
+                        LastName lastname = new LastName();
+                        lastname.Last();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
+                }
             }
-            
         }
     }
 }
