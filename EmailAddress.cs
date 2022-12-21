@@ -13,7 +13,7 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Enter User Email Address");
             var data = Console.ReadLine();
-            string pattern = "^[0-9A-Za-z]+([.][0-9A-Za-z]+)[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
+            string pattern = "^[0-9A-Za-z]+([.][0-9A-Za-z]+)?[@][0-9A-Za-z]+[.][a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
             Regex regex = new Regex(pattern);
             if (regex.IsMatch(data))
             {
