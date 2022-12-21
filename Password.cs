@@ -13,7 +13,7 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Enter User Password");
             var data = Console.ReadLine();
-            string pattern = "[A-Za-z]{8,}";
+            string pattern = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
             Regex regex = new Regex(pattern);
             if (regex.IsMatch(data))
             {
