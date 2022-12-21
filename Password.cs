@@ -27,6 +27,7 @@ namespace UserRegistrationProblem
                 Console.WriteLine(data + "It is a Invalid Password");
                 Console.ResetColor();
             }
+
         }
     }
 }
