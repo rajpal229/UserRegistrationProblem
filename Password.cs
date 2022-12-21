@@ -13,18 +13,18 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Enter User Password");
             var data = Console.ReadLine();
-            string pattern = "[A-Za-z0-9]{8,}";
+            string pattern = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W)(.{8,})$";
             Regex regex = new Regex(pattern);
             if (regex.IsMatch(data))
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(data + "It is a Valid Password");
+                Console.WriteLine(data + " It is a Valid Password");
                 Console.ResetColor();
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(data + "It is a Invalid Password");
+                Console.WriteLine(data + " It is a Invalid Password");
                 Console.ResetColor();
             }
         }
