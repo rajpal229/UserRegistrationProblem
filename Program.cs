@@ -8,7 +8,7 @@
             bool flag = true;
             while(flag = true)
             {
-                Console.WriteLine("1. Enter First Name\n2. Enter Last Name\n3. Enter Email Address\n4. Enter Phone Number\n5. Enter Password\n5. Enter Any Email");
+                Console.WriteLine("1. Enter First Name\n2. Enter Last Name\n3. Enter Email Address\n4. Enter Phone Number\n5. Enter Password\n6. Enter Any Email");
                 int commmand = Convert.ToInt32(Console.ReadLine());
                 switch (commmand)
                 {
